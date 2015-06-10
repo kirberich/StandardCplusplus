@@ -172,15 +172,7 @@ extern std::unexpected_handler __unexpected_handler;
 // These are explicitly GNU C++ specific.
 
 // This is the exception class we report -- "GNUCC++\0".
-const _Unwind_Exception_Class __gxx_exception_class
-= ((((((((_Unwind_Exception_Class) 'G' 
-	 << 8 | (_Unwind_Exception_Class) 'N')
-	<< 8 | (_Unwind_Exception_Class) 'U')
-       << 8 | (_Unwind_Exception_Class) 'C')
-      << 8 | (_Unwind_Exception_Class) 'C')
-     << 8 | (_Unwind_Exception_Class) '+')
-    << 8 | (_Unwind_Exception_Class) '+')
-   << 8 | (_Unwind_Exception_Class) '\0');
+const _Unwind_Exception_Class __gxx_exception_class = "GNUCC++";
 
 // GNU C++ personality routine, Version 0.
 extern "C" _Unwind_Reason_Code __gxx_personality_v0
