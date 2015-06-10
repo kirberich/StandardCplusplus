@@ -68,7 +68,7 @@ namespace std{
 // I'm sure this doesn't belong here, but I don't know where it does.
 #ifndef _getpid
 extern "C"{
-  int _getpid(){ return -1;}
-  int _kill(int pid, int sig){ return -1; }
+	int _getpid(){ return -1;}
+	int _kill(int pid, int sig){ return -1; }
 }
 #endif
